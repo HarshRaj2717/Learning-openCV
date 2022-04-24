@@ -22,21 +22,21 @@ cv.imshow('Canny Edges', canny_img)
 cv.waitKey(0)
 
 # Dilating the image
-dilated = cv.dilate(img, (7,7), iterations=3)
-cv.imshow('Dilated', dilated)
+dilated_img = cv.dilate(canny_img, (7,7), iterations=3)
+cv.imshow('Dilated', dilated_img)
 cv.waitKey(0)
 
 # Eroding
-eroded = cv.erode(img, (7,7), iterations=3)
-cv.imshow('Eroded', eroded)
+eroded_img = cv.erode(dilated_img, (7,7), iterations=3)
+cv.imshow('Eroded', eroded_img)
 cv.waitKey(0)
 
 # Resize
-resized = cv.resize(img, (500,500), interpolation=cv.INTER_CUBIC)
-cv.imshow('Resized', resized)
+resized_img = cv.resize(img, (500,500), interpolation=cv.INTER_CUBIC)
+cv.imshow('Resized', resized_img)
 cv.waitKey(0)
 
 # Cropping
-cropped_img = img[100:100, 200:400]
+cropped_img = img[50:200, 200:400]
 cv.imshow('Cropped', cropped_img)
 cv.waitKey(0)
