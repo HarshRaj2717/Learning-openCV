@@ -1,5 +1,7 @@
 # Learning-openCV
 
+The FCC tutorial : <https://youtu.be/oXlwWbU8l2o>
+
 ## Packages used
 
 (1) opencv-contrib-python (contains both openCV and contributer's packages)

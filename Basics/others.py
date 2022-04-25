@@ -1,3 +1,4 @@
+from configparser import Interpolation
 import cv2 as cv
 
 # Reading an image
@@ -32,6 +33,11 @@ cv.imshow('Eroded', eroded_img)
 cv.waitKey(0)
 
 # Resize
+
+# interpolation = cv.INTER_AREA for shrinking image
+# interpolation = cv.INTER_LINEAR for expanding image
+# interpolation = cv.INTER_CUBIC for expanding image ... this is slowest but gives best quality
+
 resized_img = cv.resize(img, (500,500), interpolation=cv.INTER_CUBIC)
 cv.imshow('Resized', resized_img)
 cv.waitKey(0)
