@@ -26,4 +26,5 @@ def read_webcam():
 if __name__ == "__main__":
     # read_img("Resources/Photos/cat.jpg")
     # read_vid("Resources/Videos/dog.mp4")
-    read_webcam()
+    # read_webcam()
+    pass
