@@ -1,11 +1,7 @@
 # Learning-openCV
 
-The FCC tutorial : <https://youtu.be/oXlwWbU8l2o>
-
-The CVzone tutorial : <https://www.computervision.zone/courses/learn-opencv-in-3-hours/>
+CVzone tutorial : <https://www.computervision.zone/courses/learn-opencv-in-3-hours/>
 
 ## Packages used
 
-(1) opencv-contrib-python (contains both openCV and contributer's packages)
-
-(2) caer (just for speeding up the workflow, not mainly a part of CV)
+opencv-contrib-python (contains both openCV and contributer's packages)
